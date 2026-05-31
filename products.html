@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Shop | Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav>
+            <h2>E-Shop</h2>
+
+            <a href="website.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Products Hero Section -->
+        <section class="products-hero">
+
+            <div class="products-content">
+                <h6>Explore Our Collection</h6>
+                <h1>Our Products</h1>
+                <p id="product-count">Browse premium electronics, fashion accessories and more.</p>
+                <p id="product-count"></p>
+            </div>
+
+            <div class="products-image">
+                <img src="images/products.jpg" alt="Products banner">
+            </div>
+
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <input type="text" id="search-input" placeholder="Search Products">
+        </section>
+
+        <!-- Filter Buttons -->
+        <section class="filter-section">
+            <button data-category="All">All</button>
+            <button data-category="Electronics">Electronics</button>
+            <button data-category="Fashion">Fashion</button>
+            <button data-category="Shoes">Shoes</button>
+            <button data-category="Accessories">Accessories</button>
+        </section>
+
+        <!-- Dynamic Products -->
+        <section class="products" id="products-container"></section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 E-Shop. All Rights Reserved.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="products.js"></script>
+
+</body>
+
+</html>
